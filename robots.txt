@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Agenda de turmas — fora do ar até termos dados reais
+Disallow: /pages/treinamentos/agenda.html
+
+# Sitemap
+Sitemap: https://sceveengseg.com.br/sitemap.xml

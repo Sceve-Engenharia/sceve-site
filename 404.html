@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página não encontrada | Sceve Engenharia</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="description" content="A página que você procura não existe ou foi movida. Volte para a home da Sceve Engenharia ou fale com a nossa equipe.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.min.css">
+  <link rel="stylesheet" href="assets/css/reset.min.css">
+  <link rel="stylesheet" href="assets/css/global.min.css">
+  <link rel="stylesheet" href="assets/css/header.min.css">
+  <link rel="stylesheet" href="assets/css/footer.min.css">
+  <link rel="stylesheet" href="assets/css/responsive.min.css">
+  <style>
+    .error-page { min-height: calc(100vh - var(--header-height)); display: flex; align-items: center; padding: var(--space-20) 0; }
+    .error-page__code { font-size: clamp(4rem, 12vw, 8rem); font-weight: var(--font-weight-extrabold); color: var(--color-primary-bg); line-height: 1; letter-spacing: -0.03em; }
+    .error-page__title { font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); color: var(--color-primary-dark); margin: var(--space-2) 0 var(--space-4); }
+    .error-page__desc { font-size: var(--font-size-base); color: var(--color-text-secondary); max-width: 46ch; margin-bottom: var(--space-8); line-height: var(--line-height-relaxed); }
+    .error-page__actions { display: flex; gap: var(--space-4); flex-wrap: wrap; margin-bottom: var(--space-10); }
+    .error-page__links { display: flex; flex-direction: column; gap: var(--space-2); }
+    .error-page__links-title { font-size: var(--font-size-xs); font-weight: var(--font-weight-semibold); text-transform: uppercase; letter-spacing: var(--letter-spacing-widest); color: var(--color-text-muted); margin-bottom: var(--space-2); }
+    .error-page__links a { color: var(--color-primary); font-size: var(--font-size-sm); text-decoration: underline; text-underline-offset: 2px; }
+  </style>
+</head>
+<body class="page-404">
+
+  <header class="site-header site-header--solid" id="site-header" role="banner">
+    <div class="container"><div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="assets/img/favicon.png" alt="Sceve Engenharia" class="header__logo-img"><img src="assets/img/favicon-white.png" alt="Sceve Engenharia" class="header__logo-img--white">
+        <div class="header__logo-text"><span class="header__logo-name">SCEVE</span><span class="header__logo-tagline">Engenharia de Segurança do Trabalho</span></div>
+      </a>
+      <nav class="header__nav" role="navigation">
+        <a href="index.html" class="nav__link">Início</a>
+        <div class="nav__item nav__item--dropdown">
+          <button class="nav__link" aria-haspopup="true" aria-expanded="false">Serviços<svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="nav__dropdown" role="menu">
+            <a href="pages/servicos/index.html" class="nav__dropdown-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>Todos os Serviços</a>
+            <a href="pages/servicos/nr12.html" class="nav__dropdown-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>Adequação NR12</a>
+            <a href="pages/servicos/saude-ocupacional.html" class="nav__dropdown-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Saúde Ocupacional</a>
+            <a href="pages/servicos/meio-ambiente.html" class="nav__dropdown-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c4.97 0 9-4.03 9-9-4.97 0-9 4.03-9 9z"/></svg>Meio Ambiente</a><a href="pages/servicos/pgr.html" class="nav__dropdown-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>PGR</a><a href="pages/servicos/laudos-pericias.html" class="nav__dropdown-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Laudos e Perícias</a>
+          </div>
+        </div>
+        <a href="pages/sobre.html" class="nav__link">Sobre</a>
+        <a href="pages/blog/index.html" class="nav__link">Blog</a>
+        <div class="nav__item nav__item--dropdown">
+            <button class="nav__link" aria-haspopup="true" aria-expanded="false">Treinamentos<svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="nav__dropdown" role="menu">
+              <a href="pages/treinamentos/index.html" class="nav__dropdown-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>Catálogo de Treinamentos</a>
+            </div>
+          </div>
+        <a href="pages/contato.html" class="nav__link">Contato</a>
+      </nav>
+      <div class="header__actions">
+        <a href="tel:+5541987905344" class="btn btn--outline btn--sm">(41) 98790-5344</a>
+        <a href="pages/contato.html" class="btn btn--primary btn--sm">Solicitar Orçamento</a>
+      </div>
+      <button class="header__hamburger" id="header-hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span>
+      </button>
+    </div></div>
+    <div class="header__mobile-menu" id="mobile-menu" aria-hidden="true">
+      <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav__link">Início</a>
+        <button class="mobile-nav__link" id="mobile-servicos-toggle" aria-expanded="false">Serviços<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="mobile-nav__sub" id="mobile-servicos-sub">
+          <a href="pages/servicos/index.html" class="mobile-nav__sub-link">Todos os Serviços</a>
+          <a href="pages/servicos/nr12.html" class="mobile-nav__sub-link">Adequação NR12</a>
+          <a href="pages/servicos/saude-ocupacional.html" class="mobile-nav__sub-link">Saúde Ocupacional</a>
+          <a href="pages/servicos/meio-ambiente.html" class="mobile-nav__sub-link">Meio Ambiente</a><a href="pages/servicos/pgr.html" class="mobile-nav__sub-link">PGR</a><a href="pages/servicos/laudos-pericias.html" class="mobile-nav__sub-link">Laudos e Perícias</a>
+        </div>
+        <a href="pages/sobre.html" class="mobile-nav__link">Sobre</a>
+        <a href="pages/blog/index.html" class="mobile-nav__link">Blog</a>
+        <button class="mobile-nav__link" id="mobile-treinamentos-toggle" aria-expanded="false">Treinamentos<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button><div class="mobile-nav__sub" id="mobile-treinamentos-sub"><a href="pages/treinamentos/index.html" class="mobile-nav__sub-link">Catálogo de Treinamentos</a></div>
+        <a href="pages/contato.html" class="mobile-nav__link">Contato</a>
+      </nav>
+      <div class="mobile-nav__actions">
+        <a href="tel:+5541987905344" class="btn btn--outline">(41) 98790-5344</a>
+        <a href="pages/contato.html" class="btn btn--primary">Solicitar Orçamento</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="error-page">
+      <div class="container">
+        <div class="error-page__code">404</div>
+        <h1 class="error-page__title">Essa página não existe (ou foi movida)</h1>
+        <p class="error-page__desc">O link que você seguiu pode estar desatualizado, ou o endereço foi digitado errado. Volte para a home ou fale direto com a nossa equipe para tirar sua dúvida.</p>
+        <div class="error-page__actions">
+          <a href="index.html" class="btn btn--primary btn--lg">Voltar para a home</a>
+          <a href="pages/contato.html" class="btn btn--outline btn--lg">Falar com a Sceve</a>
+        </div>
+        <div class="error-page__links">
+          <span class="error-page__links-title">Ou vá direto para</span>
+          <a href="pages/servicos/index.html">Todos os serviços</a>
+          <a href="pages/servicos/nr12.html">Adequação NR-12</a>
+          <a href="pages/treinamentos/index.html">Treinamentos NR</a>
+          <a href="pages/blog/index.html">Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer__top"><div class="container"><div class="footer__grid">
+      <div class="footer__brand"><a href="index.html" class="footer__logo"><img src="assets/img/favicon-white.png" alt="Sceve Engenharia" style="height:38px;width:auto"><div class="header__logo-text"><span class="header__logo-name">SCEVE</span><span class="header__logo-tagline">Engenharia de Segurança do Trabalho</span></div></a><p class="footer__desc">Especialistas em NR-12 e segurança de máquinas, com apoio de parceiros habilitados para os demais serviços de SST.</p></div>
+      <div class="footer__col"><h3 class="footer__col-title">Serviços</h3><ul class="footer__links"><li><a href="pages/servicos/nr12.html" class="footer__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>NR12</a></li><li><a href="pages/servicos/saude-ocupacional.html" class="footer__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Saúde Ocupacional</a></li><li><a href="pages/servicos/meio-ambiente.html" class="footer__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Meio Ambiente</a></li></ul></div>
+      <div class="footer__col"><h3 class="footer__col-title">Empresa</h3><ul class="footer__links"><li><a href="pages/sobre.html" class="footer__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Sobre</a></li><li><a href="pages/blog/index.html" class="footer__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Blog</a></li><li></li><li><a href="pages/politica-de-privacidade.html" class="footer__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Privacidade</a></li></ul></div>
+      <div class="footer__col"><h3 class="footer__col-title">Contato</h3>
+        <div class="footer__contact-item"><div class="footer__contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63 19.79 19.79 0 01.22 2 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div><div class="footer__contact-text"><span class="footer__contact-label">Telefone</span><span class="footer__contact-value"><a href="tel:+5541987905344">(41) 98790-5344</a></span></div></div>
+        <div class="footer__contact-item"><div class="footer__contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="footer__contact-text"><span class="footer__contact-label">E-mail</span><span class="footer__contact-value"><a href="mailto:comercial@sceveengseg.com.br">comercial@sceveengseg.com.br</a></span></div></div>
+      </div>
+    </div></div></div>
+    <div class="container"><div class="footer__bottom"><p class="footer__copy">&copy; <span id="footer-year">2026</span> Sceve Engenharia. Todos os direitos reservados.</p><nav class="footer__legal-links"><a href="pages/politica-de-privacidade.html" class="footer__legal-link">Política de Privacidade</a><a href="pages/politica-de-privacidade.html#lgpd" class="footer__legal-link">LGPD</a></nav></div></div>
+  </footer>
+
+  <a href="https://wa.me/5541987905344?text=Ol%C3%A1!%20Cheguei%20numa%20p%C3%A1gina%20que%20n%C3%A3o%20foi%20encontrada%20no%20site%20e%20preciso%20de%20ajuda." class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <svg class="whatsapp-float__icon" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-float__label">Fale conosco</span>
+    <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+  </a>
+  <div class="cookie-banner" id="cookie-banner" role="alert"><div class="cookie-banner__inner"><p class="cookie-banner__text">Utilizamos cookies. Veja nossa <a href="pages/politica-de-privacidade.html#cookies">Política de Cookies</a>.</p><div class="cookie-banner__actions"><button class="btn btn--outline-white btn--sm" id="cookie-decline">Necessários</button><button class="btn btn--primary btn--sm" id="cookie-accept">Aceitar</button></div></div></div>
+
+
+  <script src="assets/js/main.min.js" defer></script>
+  <script src="assets/js/whatsapp.min.js" defer></script>
+
+  <style>
+    .whatsapp-float{position:fixed;bottom:2rem;right:2rem;z-index:500;display:flex;align-items:center;gap:.625rem;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;border-radius:9999px;padding:.875rem 1.375rem .875rem 1rem;box-shadow:0 4px 20px rgba(37,211,102,.45);text-decoration:none;font-size:.875rem;font-weight:600;font-family:'Inter',sans-serif;transition:transform .2s ease,box-shadow .2s ease;white-space:nowrap}
+    .whatsapp-float:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 8px 28px rgba(37,211,102,.55)}
+    .whatsapp-float__icon{width:28px;height:28px;flex-shrink:0}
+    .whatsapp-float__pulse{position:absolute;inset:0;border-radius:inherit;animation:wa-pulse 2.5s ease-out infinite;pointer-events:none}
+    @keyframes wa-pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 14px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+    @media(max-width:480px){.whatsapp-float{bottom:1.25rem;right:1.25rem;padding:1rem;border-radius:50%}.whatsapp-float__label{display:none}}
+  </style>
+</body>
+</html>
