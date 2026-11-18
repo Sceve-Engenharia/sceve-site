@@ -1,0 +1,107 @@
+<!-- ============================================================
+     SCEVE ENGENHARIA — Header Component
+     Uso: incluir via JS (loadComponent) em todas as páginas
+     ============================================================ -->
+
+<header class="site-header site-header--solid" id="site-header" role="banner">
+  <div class="container">
+    <div class="header__inner">
+
+      <!-- Logo -->
+      <a href="/index.html" class="header__logo" aria-label="Sceve Engenharia - Início">
+        <!-- Substitua o SVG abaixo pelo logotipo real da empresa -->
+        <img src="/assets/img/favicon.png" alt="Sceve Engenharia" class="header__logo-img">
+        <div class="header__logo-text">
+          <span class="header__logo-name">Sceve Engenharia</span>
+          <span class="header__logo-tagline">Engenharia de Segurança do Trabalho</span>
+        </div>
+      </a>
+
+      <!-- Navegação principal -->
+      <nav class="header__nav" role="navigation" aria-label="Menu principal">
+
+        <a href="/index.html" class="nav__link" data-nav="home">Início</a>
+
+        <!-- Dropdown: Serviços -->
+        <div class="nav__item nav__item--dropdown">
+          <button class="nav__link" aria-haspopup="true" aria-expanded="false" data-dropdown="servicos">
+            Serviços
+            <svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown" role="menu" id="dropdown-servicos">
+            <a href="/pages/servicos/index.html" class="nav__dropdown-link" role="menuitem">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+              Todos os Serviços
+            </a>
+            <a href="/pages/servicos/nr12.html" class="nav__dropdown-link" role="menuitem">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+              Adequação NR12
+            </a>
+            <a href="/pages/servicos/saude-ocupacional.html" class="nav__dropdown-link" role="menuitem">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              Saúde Ocupacional
+            </a>
+            <a href="/pages/servicos/meio-ambiente.html" class="nav__dropdown-link" role="menuitem">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22c4.97 0 9-4.03 9-9-4.97 0-9 4.03-9 9zM3.6 9A9 9 0 1021 12.4M12 13V3M12 3l-3 3M12 3l3 3"/></svg>
+              Meio Ambiente
+            </a><a href="/pages/servicos/pgr.html" class="nav__dropdown-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>PGR</a><a href="/pages/servicos/laudos-pericias.html" class="nav__dropdown-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Laudos e Perícias</a>
+          </div>
+        </div>
+
+        <a href="/pages/sobre.html" class="nav__link" data-nav="sobre">Sobre</a>
+        <a href="/pages/blog/index.html" class="nav__link" data-nav="blog">Blog</a>
+        <a href="/pages/contato.html" class="nav__link" data-nav="contato">Contato</a>
+      </nav>
+
+      <!-- Ações do header -->
+      <div class="header__actions">
+        <a href="tel:+5541987905344" class="btn btn--outline btn--sm" aria-label="Ligar para a Sceve">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63 19.79 19.79 0 01.22 2 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          (41) 98790-5344
+        </a>
+        <a href="/pages/contato.html" class="btn btn--primary btn--sm">
+          Solicitar Orçamento
+        </a>
+      </div>
+
+      <!-- Botão hamburger (mobile) -->
+      <button class="header__hamburger" id="header-hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Menu Mobile -->
+  <div class="header__mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu de navegação" aria-hidden="true">
+    <nav class="mobile-nav" role="navigation">
+      <a href="/index.html" class="mobile-nav__link" data-nav="home">Início</a>
+
+      <button class="mobile-nav__link" id="mobile-servicos-toggle" aria-expanded="false">
+        Serviços
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </button>
+      <div class="mobile-nav__sub" id="mobile-servicos-sub">
+        <a href="/pages/servicos/index.html" class="mobile-nav__sub-link">Todos os Serviços</a>
+        <a href="/pages/servicos/nr12.html" class="mobile-nav__sub-link">Adequação NR12</a>
+        <a href="/pages/servicos/saude-ocupacional.html" class="mobile-nav__sub-link">Saúde Ocupacional</a>
+        <a href="/pages/servicos/meio-ambiente.html" class="mobile-nav__sub-link">Meio Ambiente</a><a href="/pages/servicos/pgr.html" class="mobile-nav__sub-link">PGR</a><a href="/pages/servicos/laudos-pericias.html" class="mobile-nav__sub-link">Laudos e Perícias</a>
+      </div>
+
+      <a href="/pages/sobre.html" class="mobile-nav__link" data-nav="sobre">Sobre</a>
+      <a href="/pages/blog/index.html" class="mobile-nav__link" data-nav="blog">Blog</a>
+      <a href="/pages/contato.html" class="mobile-nav__link" data-nav="contato">Contato</a>
+    </nav>
+
+    <div class="mobile-nav__actions">
+      <a href="tel:+5541987905344" class="btn btn--outline">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63 19.79 19.79 0 01.22 2 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 极好，我明白了。让我继续完成这个代码编辑。

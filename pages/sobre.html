@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre a Sceve Engenharia | Responsabilidade técnica e experiência industrial</title>
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="icon" href="../assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <meta name="description" content="A SCEVE une Engenharia de Segurança do Trabalho à experiência prática no ambiente industrial: NR-12, gerenciamento de riscos, laudos e conformidade legal.">
+  <link rel="canonical" href="https://sceveengseg.com.br/pages/sobre.html">
+  <meta property="og:title" content="Sobre a Sceve Engenharia | Engenharia de Segurança do Trabalho">
+  <meta property="og:description" content="Segurança que entende de máquinas. Engenharia que entende da indústria. Conheça a SCEVE e seu responsável técnico.">
+  <meta property="og:image" content="https://sceveengseg.com.br/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sobre a Sceve Engenharia | Engenharia de Segurança do Trabalho">
+  <meta name="twitter:description" content="Segurança que entende de máquinas. Engenharia que entende da indústria. Conheça a SCEVE e seu responsável técnico.">
+  <meta name="twitter:image" content="https://sceveengseg.com.br/assets/img/og-image.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sceveengseg.com.br/pages/sobre.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/variables.min.css">
+  <link rel="stylesheet" href="../assets/css/reset.min.css">
+  <link rel="stylesheet" href="../assets/css/global.min.css">
+  <link rel="stylesheet" href="../assets/css/header.min.css">
+  <link rel="stylesheet" href="../assets/css/footer.min.css">
+  <link rel="stylesheet" href="../assets/css/responsive.min.css">
+  <style>
+    .timeline { display: flex; flex-direction: column; gap: var(--space-8); margin-top: var(--space-8); position: relative; padding-left: var(--space-10); }
+    .timeline::before { content:''; position: absolute; left: 12px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(180deg, var(--color-accent), var(--color-primary-light)); }
+    .timeline-item { position: relative; }
+    .timeline-item__dot { position: absolute; left: calc(-2.5rem - 1px); top: 4px; width: 26px; height: 26px; background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .timeline-item__dot svg { width: 12px; height: 12px; color: white; }
+    .timeline-item__year { font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); color: var(--color-accent); letter-spacing: var(--letter-spacing-widest); text-transform: uppercase; margin-bottom: var(--space-1); }
+    .timeline-item__title { font-size: var(--font-size-base); font-weight: var(--font-weight-semibold); color: var(--color-primary-dark); margin-bottom: var(--space-1); }
+    .timeline-item__desc { font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: var(--line-height-relaxed); margin-bottom: 0; }
+    .mvv-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); margin-top: var(--space-10); }
+    .mvv-card { background: white; border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: var(--space-8); text-align: center; }
+    .mvv-card--values { margin-top: var(--space-6); text-align: left; }
+    .mvv-card--values .mvv-card__icon { margin: 0 0 var(--space-5); }
+    .mvv-card--values .mvv-card__title { text-align: center; margin-bottom: var(--space-6); }
+    .mvv-card__icon { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-5); }
+    .mvv-card__icon svg { width: 32px; height: 32px; }
+    .mvv-card__title { font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); color: var(--color-primary-dark); margin-bottom: var(--space-4); }
+    .mvv-card__text { font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed); margin: 0; }
+    .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6); }
+    .team-card { background: white; border: 1px solid var(--color-border); border-radius: var(--radius-xl); overflow: hidden; text-align: center; transition: all var(--transition-base); }
+    .team-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+    .team-card__avatar { width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)); display: flex; align-items: center; justify-content: center; font-size: var(--font-size-4xl); font-weight: var(--font-weight-bold); color: white; }
+    .team-card__body { padding: var(--space-5); }
+    .team-card__name { font-size: var(--font-size-base); font-weight: var(--font-weight-bold); color: var(--color-primary-dark); }
+    .team-card__role { font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--space-1); }
+    .team-card__crea { font-size: var(--font-size-xs); color: var(--color-accent); font-weight: var(--font-weight-semibold); margin-top: var(--space-2); }
+    .values-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+    .value-item { display: flex; gap: var(--space-3); padding: var(--space-4); background: var(--color-primary-bg); border-radius: var(--radius-lg); }
+    .value-item__icon { flex-shrink: 0; width: 36px; height: 36px; background: var(--color-accent); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; }
+    .value-item__icon svg { width: 18px; height: 18px; color: white; }
+    .value-item__label { font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); color: var(--color-primary-dark); }
+    .value-item__desc { font-size: var(--font-size-xs); color: var(--color-text-muted); margin: 0; }
+    @media (max-width: 1024px) { .mvv-grid { grid-template-columns: 1fr; } .team-grid { grid-template-columns: repeat(2, 1fr); } .values-list { grid-template-columns: 1fr; } }
+    @media (max-width: 640px) { .team-grid { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body class="page-sobre">
+
+  <!-- HEADER -->
+  <header class="site-header site-header--solid" id="site-header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+        <a href="../index.html" class="header__logo">
+          <img src="../assets/img/favicon.png" alt="Sceve Engenharia" class="header__logo-img"><img src="../assets/img/favicon-white.png" alt="Sceve Engenharia" class="header__logo-img--white">
+          <div class="header__logo-text"><span class="header__logo-name">SCEVE</span><span class="header__logo-tagline">Engenharia de Segurança do Trabalho</span></div>
+        </a>
+        <nav class="header__nav" role="navigation">
+          <a href="../index.html" class="nav__link">Início</a>
+          <div class="nav__item nav__item--dropdown">
+            <button class="nav__link" aria-haspopup="true" aria-expanded="false">Serviços<svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="nav__dropdown" role="menu">
+              <a href="servicos/index.html" class="nav__dropdown-link" role="menuitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>Todos os Serviços</a>
+              <a href="servicos/nr12.html" class="nav__dropdown-link" role="menuitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>Adequação NR12</a>
+              <a href="servicos/saude-ocupacional.html" class="nav__dropdown-link" role="menuitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Saúde Ocupacional</a>
+              <a href="servicos/meio-ambiente.html" class="nav__dropdown-link" role="menuitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c4.97 0 9-4.03 9-9-4.97 0-9 4.03-9 9z"/></svg>Meio Ambiente</a><a href="servicos/pgr.html" class="nav__dropdown-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>PGR</a><a href="servicos/laudos-pericias.html" class="nav__dropdown-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Laudos e Perícias</a>
+            </div>
+          </div>
+          <a href="sobre.html" class="nav__link nav__link--active">Sobre</a>
+          <a href="blog/index.html" class="nav__link">Blog</a>
+          <div class="nav__item nav__item--dropdown">
+            <button class="nav__link" aria-haspopup="true" aria-expanded="false">Treinamentos<svg class="nav__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="nav__dropdown" role="menu">
+              <a href="treinamentos/index.html" class="nav__dropdown-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>Catálogo de Treinamentos</a>
+              
+            </div>
+          </div>
+          <a href="contato.html" class="nav__link">Contato</a>
+        </nav>
+        <div class="header__actions">
+          <a href="tel:+5541987905344" class="btn btn--outline btn--sm">(41) 98790-5344</a>
+          <a href="contato.html" class="btn btn--primary btn--sm">Solicitar Orçamento</a>
+        </div>
+        <button class="header__hamburger" id="header-hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+    <div class="header__mobile-menu" id="mobile-menu" aria-hidden="true">
+      <nav class="mobile-nav">
+        <a href="../index.html" class="mobile-nav__link">Início</a>
+        <button class="mobile-nav__link" id="mobile-servicos-toggle" aria-expanded="false">Serviços<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="mobile-nav__sub" id="mobile-servicos-sub">
+          <a href="servicos/index.html" class="mobile-nav__sub-link">Todos os Serviços</a>
+          <a href="servicos/nr12.html" class="mobile-nav__sub-link">Adequação NR12</a>
+          <a href="servicos/saude-ocupacional.html" class="mobile-nav__sub-link">Saúde Ocupacional</a>
+          <a href="servicos/meio-ambiente.html" class="mobile-nav__sub-link">Meio Ambiente</a><a href="servicos/pgr.html" class="mobile-nav__sub-link">PGR</a><a href="servicos/laudos-pericias.html" class="mobile-nav__sub-link">Laudos e Perícias</a>
+        </div>
+        <a href="sobre.html" class="mobile-nav__link mobile-nav__link--active">Sobre</a>
+        <a href="blog/index.html" class="mobile-nav__link">Blog</a>
+        <button class="mobile-nav__link" id="mobile-treinamentos-toggle" aria-expanded="false">Treinamentos<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button><div class="mobile-nav__sub" id="mobile-treinamentos-sub"><a href="treinamentos/index.html" class="mobile-nav__sub-link">Catálogo de Treinamentos</a></div>
+        <a href="contato.html" class="mobile-nav__link">Contato</a>
+      </nav>
+      <div class="mobile-nav__actions">
+        <a href="tel:+5541987905344" class="btn btn--outline">(41) 98790-5344</a>
+        <a href="contato.html" class="btn btn--primary">Solicitar Orçamento</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Navegação estrutural">
+          <a href="../index.html">Início</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span aria-current="page">Sobre</span>
+        </nav>
+        <span class="page-hero__label">Quem somos</span>
+        <h1 class="page-hero__title">Responsabilidade técnica e experiência industrial</h1>
+        <p class="page-hero__desc">Segurança que entende de máquinas. Engenharia que entende da indústria. Engenharia especializada em NR-12, segurança de máquinas e gerenciamento de riscos ocupacionais.</p>
+      </div>
+    </section>
+
+    <!-- HISTÓRIA -->
+    <section class="section">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:start">
+          <div>
+            <span class="section-label">Nossa proposta</span>
+            <h2 class="section-title">Engenharia que conhece o chão de fábrica</h2>
+            <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:1.5rem">
+              A SCEVE une conhecimentos de Engenharia de Segurança do Trabalho à experiência prática no ambiente industrial, oferecendo soluções que consideram não apenas os requisitos normativos, mas também a realidade das máquinas, da manutenção e dos processos produtivos.
+            </p>
+            <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:1.5rem">
+              Fundada pelo Eng. Leonel Ceve, a SCEVE nasceu da percepção de que muitas empresas recebiam soluções genéricas de segurança, desconectadas da operação real. A vivência em manutenção e máquinas permite propor medidas de proteção que funcionam na prática — sem travar a produção.
+            </p>
+            <p style="color:var(--color-text-secondary);line-height:1.8">
+              Nossa especialidade é a NR-12, a segurança de máquinas e o gerenciamento de riscos ocupacionais. Serviços complementares — como saúde ocupacional, meio ambiente e perícias — são executados com apoio de profissionais parceiros habilitados, sempre sob coordenação técnica direta.
+            </p>
+          </div>
+          <div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-item__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <div class="timeline-item__year">Etapa 1</div>
+                <h3 class="timeline-item__title">Entender a operação</h3>
+                <p class="timeline-item__desc">Visita técnica para conhecer as máquinas, os processos e a rotina de produção e manutenção da sua empresa.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-item__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <div class="timeline-item__year">Etapa 2</div>
+                <h3 class="timeline-item__title">Avaliar os riscos</h3>
+                <p class="timeline-item__desc">Apreciação de riscos conforme a NR-12 e as normas técnicas aplicáveis, com priorização técnica das ações.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-item__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <div class="timeline-item__year">Etapa 3</div>
+                <h3 class="timeline-item__title">Projetar a solução</h3>
+                <p class="timeline-item__desc">Medidas de proteção e adequações viáveis para a realidade da empresa, considerando engenharia, segurança e operação.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-item__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <div class="timeline-item__year">Etapa 4</div>
+                <h3 class="timeline-item__title">Formalizar com laudo e ART</h3>
+                <p class="timeline-item__desc">Documentação técnica completa com Anotação de Responsabilidade Técnica, garantindo a conformidade legal.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSÃO, VISÃO E VALORES -->
+    <section class="section section--gray" aria-labelledby="mvv-title">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-label">Quem somos</span>
+          <h2 class="section-title" id="mvv-title">Missão, Visão e Valores</h2>
+        </div>
+        <div class="mvv-grid">
+          <div class="mvv-card">
+            <div class="mvv-card__icon" style="background:var(--color-primary-bg)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="mvv-card__title">Missão</h3>
+            <p class="mvv-card__text">Proteger pessoas, máquinas e processos, oferecendo soluções de Engenharia de Segurança do Trabalho aplicáveis à realidade de cada empresa, com responsabilidade técnica e conformidade legal.</p>
+          </div>
+          <div class="mvv-card">
+            <div class="mvv-card__icon" style="background:#FEF0E7">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-dark)" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3 class="mvv-card__title">Visão</h3>
+            <p class="mvv-card__text">Construir, projeto a projeto, uma engenharia especializada, técnica e confiável em segurança de máquinas e gerenciamento de riscos, reconhecida pela qualidade e pela aplicabilidade das suas soluções.</p>
+          </div>
+        </div>
+
+        <div class="mvv-card mvv-card--values">
+          <div class="mvv-card__icon" style="background:#E8F8F5">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3 class="mvv-card__title">Valores</h3>
+          <div class="values-list">
+            <div class="value-item">
+              <div class="value-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><div class="value-item__label">Integridade</div><p class="value-item__desc">Transparência em tudo que fazemos</p></div>
+            </div>
+            <div class="value-item">
+              <div class="value-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><div class="value-item__label">Excelência técnica</div><p class="value-item__desc">Rigor e precisão em cada laudo</p></div>
+            </div>
+            <div class="value-item">
+              <div class="value-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><div class="value-item__label">Responsabilidade</div><p class="value-item__desc">Comprometimento com resultados</p></div>
+            </div>
+            <div class="value-item">
+              <div class="value-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><div class="value-item__label">Inovação</div><p class="value-item__desc">Tecnologia a serviço da segurança</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESPONSÁVEL TÉCNICO -->
+    <section class="section" aria-labelledby="equipe-title">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-label">Responsável técnico</span>
+          <h2 class="section-title" id="equipe-title">Quem assina os projetos da SCEVE</h2>
+          <p class="section-subtitle">Todos os projetos, laudos e avaliações contam com acompanhamento direto do engenheiro, do diagnóstico à entrega.</p>
+        </div>
+        <div style="max-width:350px;margin:0 auto">
+          <div class="team-card">
+            <img src="../assets/img/blog/leonel.jpeg" alt="Leonel Ceve" class="team-card__avatar">
+            <div class="team-card__body">
+              <div class="team-card__name">Leonel Ceve</div>
+              <div class="team-card__role">Engenheiro de Segurança do Trabalho · Fundador</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2 class="cta-banner__title">Vamos trabalhar juntos?</h2>
+        <p class="cta-banner__text">Entre em contato para conhecer nossas soluções e receber uma proposta personalizada para sua empresa.</p>
+        <div class="cta-banner__actions">
+          <a href="contato.html" class="btn btn--primary btn--lg">Solicitar avaliação técnica</a>
+          <a href="servicos/index.html" class="btn btn--outline-white btn--lg">Nossos serviços</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer__top"><div class="container"><div class="footer__grid">
+      <div class="footer__brand">
+        <a href="../index.html" class="footer__logo"><img src="../assets/img/favicon-white.png" alt="Sceve Engenharia" style="height:38px;width:auto"><div class="header__logo-text"><span class="header__logo-name">SCEVE</span><span class="header__logo-tagline">Engenharia de Segurança do Trabalho</span></div></a>
+        <p class="footer__desc">Engenharia especializada em NR-12, segurança de máquinas e gerenciamento de riscos ocupacionais.</p>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/in/leonelsceve/" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col"><h3 class="footer__col-title">Serviços</h3><ul class="footer__links"><li><a href="servicos/nr12.html" class="footer__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Adequação NR12</a></li><li><a href="servicos/saude-ocupacional.html" class="footer__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Saúde Ocupacional</a></li><li><a href="servicos/meio-ambiente.html" class="footer__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Meio Ambiente</a></li><li><a href="servicos/pgr.html" class="footer__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>PGR e Gerenciamento de Riscos</a></li></ul></div>
+      <div class="footer__col"><h3 class="footer__col-title">Empresa</h3><ul class="footer__links"><li><a href="sobre.html" class="footer__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Sobre a Sceve</a></li><li><a href="blog/index.html" class="footer__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Blog SST</a></li><li></li><li><a href="contato.html" class="footer__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Contato</a></li><li><a href="politica-de-privacidade.html" class="footer__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Privacidade</a></li></ul></div>
+      <div class="footer__col"><h3 class="footer__col-title">Contato</h3>
+        <div class="footer__contact-item"><div class="footer__contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63 19.79 19.79 0 01.22 2 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div><div class="footer__contact-text"><span class="footer__contact-label">Telefone</span><span class="footer__contact-value"><a href="tel:+5541987905344">(41) 98790-5344</a></span></div></div>
+        <div class="footer__contact-item"><div class="footer__contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="footer__contact-text"><span class="footer__contact-label">E-mail</span><span class="footer__contact-value"><a href="mailto:comercial@sceveengseg.com.br">comercial@sceveengseg.com.br</a></span></div></div>
+      </div>
+    </div></div></div>
+    <div class="container"><div class="footer__bottom"><p class="footer__copy">&copy; <span id="footer-year">2026</span> Sceve Engenharia. Todos os direitos reservados.</p><nav class="footer__legal-links"><a href="politica-de-privacidade.html" class="footer__legal-link">Política de Privacidade</a><a href="politica-de-privacidade.html#lgpd" class="footer__legal-link">LGPD</a></nav></div></div>
+  </footer>
+
+  <a href="https://wa.me/5541987905344?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20Sobre%20da%20Sceve%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg class="whatsapp-float__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span class="whatsapp-float__label">Fale conosco</span><span class="whatsapp-float__pulse"></span></a>
+  <div class="cookie-banner" id="cookie-banner" role="alert"><div class="cookie-banner__inner"><p class="cookie-banner__text">Utilizamos cookies. Veja nossa <a href="politica-de-privacidade.html#cookies">Política de Cookies</a>.</p><div class="cookie-banner__actions"><button class="btn btn--outline-white btn--sm" id="cookie-decline">Necessários</button><button class="btn btn--primary btn--sm" id="cookie-accept">Aceitar</button></div></div></div>
+  <style>.whatsapp-float{position:fixed;bottom:2rem;right:2rem;z-index:500;display:flex;align-items:center;gap:.625rem;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;border-radius:9999px;padding:.875rem 1.375rem .875rem 1rem;box-shadow:0 4px 20px rgba(37,211,102,.45);text-decoration:none;font-size:.875rem;font-weight:600;font-family:'Inter',sans-serif;transition:transform .2s ease,box-shadow .2s ease;white-space:nowrap}.whatsapp-float:hover{transform:translateY(-3px)}.whatsapp-float__icon{width:28px;height:28px;flex-shrink:0}.whatsapp-float__pulse{position:absolute;inset:0;border-radius:inherit;animation:wa-pulse 2.5s ease-out infinite;pointer-events:none}@keyframes wa-pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 14px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}@media(max-width:480px){.whatsapp-float{bottom:1.25rem;right:1.25rem;padding:1rem;border-radius:50%}.whatsapp-float__label{display:none}}</style>
+  <script src="../assets/js/main.min.js" defer></script>
+  <script src="../assets/js/whatsapp.min.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+/* ============================================================
+   SCEVE ENGENHARIA — Responsivo (mobile-first breakpoints)
+   Breakpoints: sm=640, md=768, lg=1024, xl=1280
+   ============================================================ */
+
+/* ── XL → LG (≤1280px) ─────────────────────────────────────── */
+
+@media (max-width: 1280px) {
+  .container {
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
+
+  /* --- Navegação: o menu completo + ações não cabem no header
+       a partir daqui, então colapsa para o hamburger --- */
+
+  .header__nav,
+  .header__actions {
+    display: none;
+  }
+
+  .header__hamburger {
+    display: flex;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer__desc {
+    max-width: 100%;
+  }
+
+  .differentials-grid,
+  .nr12-highlight__grid {
+    gap: var(--space-10);
+  }
+}
+
+/* ── LG → MD (≤1024px) ─────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  /* --- Hero --- */
+
+  .hero__content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero__subtitle {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__actions {
+    justify-content: center;
+  }
+
+  /* --- Serviços --- */
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* --- Diferenciais --- */
+
+  .differentials-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .differentials-visual {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* --- NR12 --- */
+
+  .nr12-highlight__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  /* --- Depoimentos --- */
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* --- Blog preview --- */
+
+  .blog-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* --- Blog layout --- */
+
+  .blog-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-sidebar {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* --- Post layout --- */
+
+  .post-layout {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Contato --- */
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Serviço individual --- */
+
+  .service-detail__intro {
+    grid-template-columns: 1fr;
+  }
+
+  .service-detail__aside {
+    position: static;
+  }
+
+  /* --- Benefits --- */
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* --- Process --- */
+
+  .process-steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+  }
+
+  .process-steps::before {
+    display: none;
+  }
+
+  /* --- Footer --- */
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* --- Section sizing --- */
+
+  .section-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .page-hero__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  h1 { font-size: var(--font-size-3xl); }
+  h2 { font-size: var(--font-size-2xl); }
+  h3 { font-size: var(--font-size-xl); }
+}
+
+/* ── MD → SM (≤768px) ──────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 64px;
+  }
+
+  .container {
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
+
+  .section {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-12);
+  }
+
+  .section--lg {
+    padding-top: var(--space-20);
+    padding-bottom: var(--space-20);
+  }
+
+  /* --- Hero --- */
+
+  .hero {
+    min-height: auto;
+    padding-top: var(--header-height);
+  }
+
+  .hero__content {
+    padding: var(--space-12) 0;
+  }
+
+  .hero__title {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+  }
+
+  /* --- Trust bar --- */
+
+  .trust-bar__inner {
+    gap: var(--space-5);
+    justify-content: flex-start;
+  }
+
+  /* --- Serviços --- */
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Diferenciais --- */
+
+  .differentials-visual {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* --- Depoimentos --- */
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Blog --- */
+
+  .blog-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- NR12 risks --- */
+
+  .nr12-risks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Benefits --- */
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Process --- */
+
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Footer --- */
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-4);
+  }
+
+  /* --- Contato --- */
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-wrapper {
+    padding: var(--space-8) var(--space-6);
+  }
+
+  /* --- Post --- */
+
+  .post-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .post-excerpt {
+    font-size: var(--font-size-base);
+  }
+
+  /* --- Section header --- */
+
+  .section-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .page-hero__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  h1 { font-size: var(--font-size-2xl); }
+  h2 { font-size: var(--font-size-xl); }
+
+  /* --- Misc --- */
+
+  .cta-banner__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .blog-featured__title {
+    font-size: var(--font-size-xl);
+  }
+
+  .related-posts__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── SM → XS (≤480px) ──────────────────────────────────────── */
+
+@media (max-width: 480px) {
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .cta-banner__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-banner__actions .btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .hero__badge {
+    font-size: 0.625rem;
+  }
+
+  .trust-bar__item {
+    font-size: var(--font-size-xs);
+  }
+
+  .contact-form-wrapper {
+    padding: var(--space-6) var(--space-5);
+  }
+
+  .cookie-banner__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cookie-banner__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ── Print ─────────────────────────────────────────────────── */
+
+@media print {
+  .site-header,
+  .site-footer,
+  .whatsapp-float,
+  .cookie-banner,
+  .blog-sidebar,
+  .header__hamburger {
+    display: none !important;
+  }
+
+  main {
+    padding-top: 0 !important;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+}

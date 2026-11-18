@@ -1,0 +1,64 @@
+<!--
+  Componente: Formulário de Contato
+  Referência para copiar em páginas que precisam do formulário.
+  Requer: assets/css/contato.css + assets/js/formulario.js
+-->
+<form id="form-contato" class="contact-form" novalidate>
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" for="nome">Nome completo <span class="form-required">*</span></label>
+      <input type="text" id="nome" name="nome" class="form-control" placeholder="Seu nome" autocomplete="name" required minlength="3">
+      <span class="form-error" id="nome-error"></span>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="empresa">Empresa</label>
+      <input type="text" id="empresa" name="empresa" class="form-control" placeholder="Nome da empresa" autocomplete="organization">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" for="email">E-mail <span class="form-required">*</span></label>
+      <input type="email" id="email" name="email" class="form-control" placeholder="seu@email.com.br" autocomplete="email" required>
+      <span class="form-error" id="email-error"></span>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="telefone">Telefone / WhatsApp <span class="form-required">*</span></label>
+      <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(11) 99999-9999" autocomplete="tel" required>
+      <span class="form-error" id="telefone-error"></span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="servico">Serviço de interesse</label>
+    <select id="servico" name="servico" class="form-control">
+      <option value="">Selecione um serviço</option>
+      <option value="nr12">Adequação NR12</option>
+      <option value="pcmso">PCMSO / Saúde Ocupacional</option>
+      <option value="pgr">PGR / Segurança do Trabalho</option>
+      <option value="meio-ambiente">Meio Ambiente / PGRS / Licenciamento</option>
+      <option value="laudos">Laudos Técnicos</option>
+      <option value="treinamentos">Treinamentos NR</option>
+      <option value="outro">Outro</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="mensagem">Mensagem <span class="form-required">*</span></label>
+    <textarea id="mensagem" name="mensagem" class="form-control" rows="5" placeholder="Descreva brevemente sua necessidade…" required minlength="20"></textarea>
+    <span class="form-error" id="mensagem-error"></span>
+  </div>
+  <div class="form-group">
+    <label class="form-label form-label--checkbox">
+      <input type="checkbox" id="lgpd" name="lgpd" required>
+      <span>Concordo com a <a href="/pages/politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o contato da Sceve Engenharia.</span>
+    </label>
+    <span class="form-error" id="lgpd-error"></span>
+  </div>
+  <div class="form-success" id="form-success" style="display:none">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+    <h3>Mensagem enviada!</h3>
+    <p>Recebemos sua solicitação. Retornaremos em até 1 dia útil pelo e-mail ou telefone informado.</p>
+  </div>
+  <button type="submit" class="btn btn--primary btn--lg">
+    <span class="btn-text">Enviar mensagem</span>
+    <svg class="btn-spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+  </button>
+</form>

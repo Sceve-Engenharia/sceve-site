@@ -1,0 +1,47 @@
+<!--
+  Componente: Formulário de Orçamento (versão simplificada para CTAs laterais)
+  Uso: copiar em páginas de serviço para coleta rápida de leads.
+  Não está incluído em nenhuma página no momento — fica como referência.
+  Requer: assets/js/formulario.js (usar ID form-orcamento)
+-->
+<form id="form-orcamento" class="quote-form" novalidate>
+  <div class="hp-field" aria-hidden="true">
+    <label for="hp-website-orcamento">Deixe este campo em branco</label>
+    <input type="text" id="hp-website-orcamento" name="website" tabindex="-1" autocomplete="off">
+  </div>
+  <div class="quote-form__fields">
+    <h3 class="quote-form__title">Solicite um orçamento</h3>
+    <p class="quote-form__subtitle">Preencha os dados e entraremos em contato em até 24h.</p>
+    <div class="form-group">
+      <label class="form-label" for="orc-nome">Nome <span class="form-required">*</span></label>
+      <input type="text" id="orc-nome" name="nome" class="form-control" placeholder="Seu nome" required>
+      <span class="form-error"></span>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="orc-telefone">WhatsApp <span class="form-required">*</span></label>
+      <input type="tel" id="orc-telefone" name="telefone" class="form-control" placeholder="(41) 99999-9999" required>
+      <span class="form-error"></span>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="orc-email">E-mail <span class="form-required">*</span></label>
+      <input type="email" id="orc-email" name="email" class="form-control" placeholder="seu@email.com.br" required>
+      <span class="form-error"></span>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="orc-servico">Serviço</label>
+      <select id="orc-servico" name="servico" class="form-control">
+        <option value="">Selecione…</option>
+        <option value="nr12">Adequação NR12</option>
+        <option value="pcmso">PCMSO / Saúde Ocupacional</option>
+        <option value="meio-ambiente">Meio Ambiente</option>
+        <option value="treinamentos">Treinamentos NR</option>
+        <option value="outro">Outro</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center">Solicitar orçamento</button>
+  </div>
+  <div class="form-success">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+    <p>Solicitação enviada! Retornaremos em breve.</p>
+  </div>
+</form>

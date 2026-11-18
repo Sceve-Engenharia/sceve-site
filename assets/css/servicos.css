@@ -1,0 +1,453 @@
+/* ============================================================
+   SCEVE ENGENHARIA — Páginas de Serviços
+   ============================================================ */
+
+/* --- Overview de serviços --- */
+
+.services-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.service-overview-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-overview-card:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-6px);
+  border-color: transparent;
+}
+
+.service-overview-card__photo {
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+
+.service-overview-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.service-overview-card:hover .service-overview-card__photo img {
+  transform: scale(1.05);
+}
+
+.service-overview-card__body {
+  padding: var(--space-6);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-overview-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent);
+  line-height: var(--line-height-snug);
+  margin-bottom: var(--space-3);
+}
+
+.service-overview-card__desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  flex: 1;
+  margin-bottom: var(--space-5);
+}
+
+.service-overview-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  margin-top: auto;
+  transition: gap var(--transition-fast), color var(--transition-fast);
+}
+
+.service-overview-card__cta svg {
+  width: 16px;
+  height: 16px;
+  transition: transform var(--transition-fast);
+}
+
+.service-overview-card:hover .service-overview-card__cta {
+  color: var(--color-accent);
+  gap: var(--space-3);
+}
+
+.service-overview-card:hover .service-overview-card__cta svg {
+  transform: translateX(4px);
+}
+
+/* --- Página de serviço individual --- */
+
+.service-detail__intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+  padding: var(--space-16) 0;
+}
+
+.service-detail__content {}
+
+.service-detail__content p {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+.service-detail__aside {
+  position: sticky;
+  top: calc(var(--header-height) + var(--space-6));
+}
+
+/* Caixa de CTA lateral */
+.aside-cta {
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  color: var(--color-white);
+  margin-bottom: var(--space-6);
+}
+
+.aside-cta__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-3);
+  line-height: var(--line-height-snug);
+}
+
+.aside-cta__text {
+  font-size: var(--font-size-sm);
+  color: rgba(255,255,255,0.75);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-6);
+}
+
+.aside-cta .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Caixa de info lateral */
+.aside-info {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.aside-info__title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  padding: var(--space-4) var(--space-6);
+}
+
+.aside-info__list {
+  padding: var(--space-5) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.aside-info__item {
+  display: flex;
+  gap: var(--space-3);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.aside-info__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.aside-info__item svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* --- Benefícios / Features grid --- */
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+/* Dentro da coluna de conteúdo (metade da largura, ao lado da aside), uma
+   grade de colunas sempre fica apertada — lista vertical com ícone ao lado
+   do texto organiza melhor esse espaço estreito, em qualquer tamanho de tela. */
+.service-detail__content .benefits-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.service-detail__content .benefit-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.service-detail__content .benefit-card__icon {
+  margin-bottom: 0;
+}
+
+.service-detail__content .benefit-card__title {
+  margin-bottom: var(--space-1);
+}
+
+.benefit-card {
+  padding: var(--space-6);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+
+.benefit-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary-light);
+}
+
+.benefit-card__icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-primary-bg);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-4);
+  flex-shrink: 0;
+}
+
+.benefit-card__icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-primary);
+}
+
+.benefit-card__title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-2);
+}
+
+.benefit-card__desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: 0;
+}
+
+/* --- Processo / Steps --- */
+
+.process-section {
+  padding: var(--space-20) 0;
+  background-color: var(--color-bg-section);
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  position: relative;
+}
+
+.process-steps::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: calc(12.5% + 20px);
+  right: calc(12.5% + 20px);
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  z-index: 0;
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-4);
+  position: relative;
+  z-index: 1;
+}
+
+.process-step__num {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-primary);
+  position: relative;
+  z-index: 2;
+}
+
+.process-step__title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary-dark);
+}
+
+.process-step__desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: 0;
+}
+
+/* --- NR12 específico --- */
+
+.nr12-risks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.nr12-risk-item {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--color-accent);
+}
+
+.nr12-risk-item__icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-accent-bg);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nr12-risk-item__icon svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent-dark);
+}
+
+.nr12-risk-item__title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-1);
+}
+
+.nr12-risk-item__desc {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: 0;
+}
+
+/* --- FAQ Accordion --- */
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.faq-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: box-shadow var(--transition-fast);
+}
+
+.faq-item.is-open {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary-light);
+}
+
+.faq-item__trigger {
+  width: 100%;
+  padding: var(--space-5) var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  background-color: var(--color-white);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+  text-align: left;
+}
+
+.faq-item__trigger:hover,
+.faq-item.is-open .faq-item__trigger {
+  background-color: var(--color-primary-bg);
+}
+
+.faq-item__question {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary-dark);
+}
+
+.faq-item__arrow {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: var(--color-primary);
+  transition: transform var(--transition-base);
+}
+
+.faq-item.is-open .faq-item__arrow {
+  transform: rotate(180deg);
+}
+
+.faq-item__body {
+  display: none;
+  padding: 0 var(--space-6) var(--space-5);
+  background-color: var(--color-primary-bg);
+}
+
+.faq-item.is-open .faq-item__body {
+  display: block;
+}
+
+.faq-item__answer {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: 0;
+  padding-top: var(--space-4);
+}

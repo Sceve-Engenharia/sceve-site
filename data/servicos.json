@@ -1,0 +1,106 @@
+{
+  "servicos": [
+    {
+      "id": "nr12",
+      "slug": "nr12",
+      "title": "Adequação NR12",
+      "short_title": "NR12",
+      "icon": "shield-check",
+      "description": "Elaboração da Apreciação de Riscos conforme ABNT NBR ISO 12100, projetos de proteção de máquinas e equipamentos, e adequação completa à Norma Regulamentadora NR12 do MTE.",
+      "features": [
+        "Apreciação de riscos de máquinas",
+        "Projetos de proteção coletiva",
+        "Apreciação de riscos e relatórios técnicos",
+        "Treinamentos de operadores",
+        "Laudo de conformidade",
+        "ART do engenheiro responsável"
+      ],
+      "url": "/pages/servicos/nr12.html"
+    },
+    {
+      "id": "saude-ocupacional",
+      "slug": "saude-ocupacional",
+      "icon": "activity",
+      "title": "Saúde Ocupacional",
+      "short_title": "PCMSO",
+      "description": "Elaboração e gestão do PCMSO, coordenação de exames médicos admissionais, periódicos e demissionais, e programas de promoção da saúde no trabalho.",
+      "features": [
+        "PCMSO – Programa de Controle Médico",
+        "Exames ocupacionais",
+        "Atestados de saúde (ASO)",
+        "Análise epidemiológica",
+        "Programas de vacinação",
+        "Gestão de afastamentos"
+      ],
+      "url": "/pages/servicos/saude-ocupacional.html"
+    },
+    {
+      "id": "meio-ambiente",
+      "slug": "meio-ambiente",
+      "icon": "leaf",
+      "title": "Meio Ambiente",
+      "short_title": "Meio Ambiente",
+      "description": "Licenciamento ambiental, gestão de resíduos sólidos (PGRSS), laudos de conformidade ambiental e assessoria completa para adequação à legislação vigente.",
+      "features": [
+        "Licenciamento ambiental",
+        "PGRSS – Gestão de resíduos",
+        "Laudos de conformidade",
+        "Monitoramento de efluentes",
+        "Inventário de emissões",
+        "Relatórios de sustentabilidade"
+      ],
+      "url": "/pages/servicos/meio-ambiente.html"
+    },
+    {
+      "id": "pgr",
+      "slug": "pgr",
+      "icon": "clipboard-list",
+      "title": "PGR e Gerenciamento de Riscos Ocupacionais",
+      "short_title": "PGR",
+      "description": "Elaboração do Programa de Gerenciamento de Riscos (PGR) conforme NR-01, inventário de riscos e plano de ação para controle dos agentes nocivos.",
+      "features": [
+        "Inventário de riscos (NR-01)",
+        "Identificação de perigos",
+        "Plano de ação e controle",
+        "Hierarquia de controles",
+        "Integração com eSocial",
+        "Revisões periódicas"
+      ],
+      "url": "/pages/servicos/pgr.html"
+    },
+    {
+      "id": "laudos",
+      "slug": "laudos",
+      "icon": "file-text",
+      "title": "Laudos e Perícias",
+      "short_title": "Laudos",
+      "description": "Elaboração de laudos técnicos periciais para fins judiciais e administrativos, laudos de insalubridade e periculosidade, com emissão de ART.",
+      "features": [
+        "Laudo de insalubridade",
+        "Laudo de periculosidade",
+        "LTCAT – Laudo Técnico",
+        "Perícias judiciais",
+        "Laudos de NR específicas",
+        "ART do responsável técnico"
+      ],
+      "url": "/pages/servicos/laudos-pericias.html"
+    },
+    {
+      "id": "treinamentos",
+      "slug": "treinamentos",
+      "icon": "users",
+      "title": "Treinamentos SST",
+      "short_title": "Treinamentos",
+      "description": "Programas de treinamento presencial e EAD em normas regulamentadoras, CIPA, trabalho em altura, espaço confinado, primeiros socorros e muito mais.",
+      "features": [
+        "NRs: NR05, NR10, NR12, NR33, NR35",
+        "CIPA e DDS",
+        "Trabalho em altura",
+        "Espaço confinado",
+        "Primeiros socorros",
+        "Plataforma EAD própria"
+      ],
+      "url": "/pages/servicos/index.html#treinamentos"
+    }
+  ]
+}

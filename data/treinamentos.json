@@ -1,0 +1,98 @@
+{
+  "treinamentos": [
+    {
+      "id": 1,
+      "title": "NR05 – CIPA: Comissão Interna de Prevenção de Acidentes",
+      "nr": "NR-05",
+      "modalidade": ["Presencial", "EAD"],
+      "carga_horaria": "20h",
+      "publico": "Membros eleitos e indicados da CIPA",
+      "descricao": "Capacitação dos membros da CIPA conforme exigência legal, abordando legislação, análise de acidentes, mapa de riscos e medidas preventivas."
+    },
+    {
+      "id": 2,
+      "title": "NR10 – Segurança em Instalações Elétricas",
+      "nr": "NR-10",
+      "modalidade": ["Presencial"],
+      "carga_horaria": "40h (básico) / 60h (complementar)",
+      "publico": "Profissionais que trabalham com sistemas elétricos",
+      "descricao": "Habilitação de trabalhadores para atividades em instalações elétricas, com teoria e prática de acordo com as diretrizes da NR-10."
+    },
+    {
+      "id": 3,
+      "title": "NR12 – Segurança no Trabalho em Máquinas",
+      "nr": "NR-12",
+      "modalidade": ["Presencial", "EAD"],
+      "carga_horaria": "8h a 16h",
+      "publico": "Operadores, manutenedores e supervisores",
+      "descricao": "Capacitação de operadores e equipes de manutenção para trabalho seguro com máquinas e equipamentos industriais."
+    },
+    {
+      "id": 4,
+      "title": "NR33 – Espaço Confinado",
+      "nr": "NR-33",
+      "modalidade": ["Presencial"],
+      "carga_horaria": "16h (autorizados e vigias) / 40h (supervisor de entrada)",
+      "publico": "Vigias, entrantes e supervisores de espaço confinado",
+      "descricao": "Treinamento completo para entrada e trabalho em espaços confinados, incluindo reconhecimento de atmosferas perigosas e uso de EPIs. Carga horária mínima de 16h para trabalhadores autorizados e vigias, e 40h para supervisor de entrada."
+    },
+    {
+      "id": 5,
+      "title": "NR35 – Trabalho em Altura",
+      "nr": "NR-35",
+      "modalidade": ["Presencial"],
+      "carga_horaria": "8h",
+      "publico": "Trabalhadores que executam atividades acima de 2 metros",
+      "descricao": "Capacitação teórico-prática para trabalho seguro em altura, com foco em planejamento, riscos e uso correto de sistemas de proteção. Treinamento 100% presencial, conforme a Portaria MTE nº 1.259/2026."
+    },
+    {
+      "id": 6,
+      "title": "Primeiros Socorros no Ambiente de Trabalho",
+      "nr": "NR-07",
+      "modalidade": ["Presencial"],
+      "carga_horaria": "8h",
+      "publico": "Brigada de emergência e colaboradores em geral",
+      "descricao": "Capacitação em primeiros socorros, RCP, uso de DEA e atendimento a situações de emergência no ambiente de trabalho."
+    },
+    {
+      "id": 7,
+      "title": "Reciclagem NR10 – Segurança em Instalações Elétricas",
+      "nr": "NR-10",
+      "tipo": "reciclagem",
+      "modalidade": ["Presencial"],
+      "carga_horaria": "Definida conforme avaliação de risco",
+      "publico": "Trabalhadores já capacitados em NR-10",
+      "descricao": "Reciclagem periódica obrigatória a cada 2 anos, ou antes disso em caso de mudança de função, técnica, equipamento ou afastamento superior a 3 meses."
+    },
+    {
+      "id": 8,
+      "title": "Reciclagem NR12 – Segurança em Máquinas",
+      "nr": "NR-12",
+      "tipo": "reciclagem",
+      "modalidade": ["Presencial", "EAD"],
+      "carga_horaria": "Definida conforme o PGR / inventário de risco",
+      "publico": "Operadores e manutenedores já capacitados em NR-12",
+      "descricao": "Reciclagem periódica conforme a periodicidade definida no PGR e no inventário de risco da empresa, sempre que houver alteração de máquina, processo ou procedimento."
+    },
+    {
+      "id": 9,
+      "title": "Reciclagem NR33 – Espaço Confinado",
+      "nr": "NR-33",
+      "tipo": "reciclagem",
+      "modalidade": ["Presencial"],
+      "carga_horaria": "Definida conforme avaliação de risco",
+      "publico": "Autorizados, vigias e supervisores já capacitados em NR-33",
+      "descricao": "Reciclagem anual obrigatória, ou antes disso em caso de mudança de procedimentos, riscos não considerados na capacitação anterior, ou afastamento superior a 3 meses."
+    },
+    {
+      "id": 10,
+      "title": "Reciclagem NR35 – Trabalho em Altura",
+      "nr": "NR-35",
+      "tipo": "reciclagem",
+      "modalidade": ["Presencial"],
+      "carga_horaria": "8h",
+      "publico": "Trabalhadores já capacitados em NR-35",
+      "descricao": "Reciclagem obrigatória a cada 2 anos, em caso de mudança de procedimentos ou riscos, após acidente, ou retorno de afastamento superior a 90 dias. 100% presencial, conforme a Portaria MTE nº 1.259/2026."
+    }
+  ]
+}
